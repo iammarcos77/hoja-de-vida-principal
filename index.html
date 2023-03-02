@@ -1,13 +1,20 @@
-<head ><body background="https://pbs.twimg.com/media/DVnzAh2VoAEuOjS?format=jpg&name=4096x4096"></body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Binvenido</title>
+    <body background="light" content="width=device-width, initial-scale=1">
+    	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 	<center>
 	<TITLE>Binvenido</TITLE>
-	<script>
+	<script type="text/javascript">
 		function combrobarClave(){
 			clave1=document.fl.clave1.value
 			clave2=document.fl.clave2.value
 			if (clave1 == "admin" && clave2=="conejo"){
 				alert("Los Datos Coinciden...\n Bienvenido");
-				var href="principal.html";
+				var href="html/principals.html";
 				window.location=href;
 			}
 			else{
@@ -19,19 +26,60 @@
 		}
 	</script>
 </head>
-<body>
-	<h1>"Bienvenido" Ingrese contraseña</h1>
-	<br> 
-	<font size="6pt"> Ingrese las dos contraseña, para ingresar al mundo Marvel xD.
-</font>
-	<br>
-	<form action="" name="fl">
-		contraseña:<input type="password" name="clave1" size="20">
-		<br>
-		Repite la contraseña:<input type="password" name="clave2" size="20">
-		<br>
-		<input type="button" value="Comprobar si son iguales" onclick="combrobarClave()">
-	</form>
-	</center>
+<body> 
+	
 
 </body>
+    
+  </head>
+  <body>
+  	<div class="text-bg-primary p-3">Hoja de vida</div>
+  	<div class="fixed-top">...</div>
+</div>  
+    <h1>"Bienvenido" Ingrese contraseña</h1>
+  <br> 
+  <font size="6pt"> Ingrese las dos contraseña, para ingresar al mundo Marvel xD.
+</font>
+  <br>
+
+  <form action="" name="fl">
+  	<div class="col-auto">
+
+    <label class="visually-hidden">Usuario</label>
+    <input type="password" name="clave1" class="form-control" placeholder="usuario">
+    <br>
+   </div>
+
+    <div class="col-auto">
+    	<label class="visually-hidden">Contraseña</label>
+        <input type="password" name="clave2" class="form-control" placeholder="contraseña">
+    </div>
+    <br>
+    <div>
+
+        <input type="button" value="ingresar" class="btn btn-outline-info" onclick="combrobarClave()">
+    </div> 
+  </form>
+
+  <audio src="audio/avengers.mp3" controls autoplay> </audio>
+ 
+  </center>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
+   	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
